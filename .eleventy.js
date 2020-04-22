@@ -20,6 +20,9 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPassthroughCopy('src/favicon.ico')
   eleventyConfig.addPassthroughCopy('src/favicon.png')
 
+  // Redirects
+  eleventyConfig.addPassthroughCopy('src/_redirects')
+
   // Watch CSS
   eleventyConfig.addWatchTarget('src/assets/**/*.css')
 
