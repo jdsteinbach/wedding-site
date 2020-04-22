@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1000px;
+  margin: auto;
+  background: #d9d2bf;
+  background-image: url(../images/linen.jpg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@font-face {
+  font-family: Pharmacy;
+  src: url('../assets/pharmacy.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Steelfish;
+  src: url('../assets/steelfish.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Steelfish;
+  src: url('../assets/steelfishbold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Aubrey;
+  src: url('../assets/aubrey.ttf') format('truetype');
+  font-display: swap;
+}
+
+.serif1 {
+  font-family: Corben, Times, serif;
+  line-height: 95%;
+}
+
+.serif2 {
+  font-family: Ultra, Georgia, serif;
+}
+
+.serif3 {
+  font-family: "Yeseva One", serif;
+}
+
+.sans1 {
+  font-family: Steelfish, Helvetica, sans;
+}
+
+.sans1b {
+  font-family: "Steelfish", Helvetica, sans;
+  font-weight: bold;
+}
+
+.sans2 {
+  font-family: Amaranth, Arial, sans;
+}
+
+.sans3 {
+  font-family: "PT Sans Narrow", Verdana, sans;
+}
+
+.script1 {
+  font-family: "Lobster Two", Georgia, serif;
+}
+
+.script2 {
+  font-family: Aubrey, Georgia, serif;
+}
+
+.script3 {
+  font-family: Pharmacy, Georgia, serif;
+}
+
+.purple {
+  color: #392840;
+}
+
+.gray {
+  color: #73686e;
+}
+
+.tan {
+  color: #a79c94;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+.firstcap {
+  text-transform: capitalize;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.littlewords {
+  font-size: 35%;
+  display: block;
+  float: left;
+  width: 50px;
+  line-height: 120%;
+  margin-top: 15px;
+}
+
+a,
+a:visited {
+  color: #392840;
+}
+
+a:hover,
+a:visited:hover {
+  color: #73686e;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Style */
+
+#header {
+  max-width: 1000px;
+}
+
+#menu {
+  padding: 12px 0 14px;
+  font-family: "Lobster Two", Times, serif;
+  font-size: 18px;
+}
+
+#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+#menu li {
+  color: #392840;
+  display: inline-block;
+  font-style: italic;
+}
+
+#menu li a,
+#menu li a:visited {
+  color: #392840;
+  text-decoration: none;
+  padding: 12px 32px;
+  position: relative;
+  z-index: 2;
+  border-bottom: 2px solid transparent;
+}
+
+#menu li a:hover,
+#menu li a:visited:hover {
+  color: #efefef;
+  background: #392840;
+  opacity: 0.3;
+}
+
+#menu li a.active {
+  border-bottom-color: currentColor;
+}
+
+#names {
+  width: 1000px;
+  margin: auto;
+  padding: 30px 0px;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: grid;
+  grid-template:
+    "james  amp"auto "audrey amp"auto / auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+#james {
+  grid-area: james;
+  font-family: Amaranth, Arial, sans;
+  font-size: 48pt;
+  color: #392840;
+  height: 60px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-align: right;
+}
+
+#audrey {
+  grid-area: audrey;
+  font-size: 48pt;
+  font-family: Pharmacy, Georgia, serif;
+  color: #392840;
+  text-align: right;
+}
+
+#amp {
+  grid-area: amp;
+  margin-top: -30px;
+  font-size: 98pt;
+  color: #a79c94;
+  text-align: left;
+}
+
+/* Content Style */
+
+#content {
+  margin: 0 auto;
+  padding-top: 10px;
+  max-width: 1000px;
+  display: grid;
+  column-gap: 20px;
+  grid-template:
+    "title left   right"auto ".     bottom bottom"auto / auto 1fr 1fr;
+}
+
+.title {
+  margin-top: 10px;
+  grid-area: title;
+  writing-mode: vertical-lr;
+  text-align: right;
+  font-family: "Lobster Two", Times, Serif;
+  font-size: 32pt;
+  color: #a79c94;
+  font-style: italic;
+  transform: rotate(180deg);
+}
+
+.left {
+  grid-area: left;
+  text-align: left;
+}
+
+.right {
+  grid-area: right;
+}
+
+.bottom {
+  grid-area: bottom;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: solid #392840 2px;
+}
+
+p {
+  font-size: 24pt;
+  text-shadow: 1px 1px #fff;
+}
+
+.caption {
+  margin-top: -35px;
+  font-size: 14pt;
+  text-shadow: none;
+}
+
+.caption a,
+.caption a:visited {
+  color: #392840;
+  text-decoration: none;
+}
+
+.caption a:hover,
+.caption a:visited:hover {
+  color: #73686e;
+  text-decoration: underline;
+}
+
+/* Story Style */
+
+
+#met {
+  font-size: 21pt;
+  letter-spacing: 0px;
+}
+
+#friends {
+  font-size: 26pt;
+  margin-top: -2px;
+}
+
+#common {
+  font-size: 16pt;
+  margin-top: 10px;
+}
+
+#loves {
+  font-size: 23.5pt;
+  margin: 5px auto 0px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #392840;
+}
+
+#atwork {
+  font-size: 24pt;
+  margin-top: 3px;
+}
+
+#afterwork {
+  font-size: 24pt;
+  margin-top: 4px;
+}
+
+#texting {
+  font-size: 14pt;
+  letter-spacing: -1px;
+  margin-top: 5px;
+}
+
+#perfect {
+  font-size: 23pt;
+  letter-spacing: 0px;
+  margin-top: 9px;
+}
+
+#inseparable {
+  font-size: 23pt;
+  letter-spacing: 0px;
+  margin-top: 6px;
+}
+
+.amper {
+  font-family: "Palatino Linotype", Palatino, Times, serif;
+}
+
+.polaroid {
+  padding: 15px 15px 45px 15px;
+  background-color: #efefef;
+  border: #fff solid 1px;
+  -moz-box-shadow: 0px 2px 15px #333;
+  -webkit-box-shadow: 0px 2px 15px #333;
+}
+
+/* Date Style */
+
+#eleven {
+  font-size: 66pt;
+  letter-spacing: 2px;
+}
+
+#oclock {
+  font-size: 72pt;
+  letter-spacing: 4px;
+  margin-top: -25px;
+}
+
+#am {
+  font-size: 48pt;
+  letter-spacing: -1px;
+  margin-top: -15px;
+}
+
+#week {
+  font-size: 40pt;
+  letter-spacing: 3px;
+}
+
+#month {
+  font-size: 92pt;
+  letter-spacing: 0px;
+  margin-top: -19px;
+}
+
+#year {
+  font-size: 50pt;
+  letter-spacing: 45px;
+  margin-top: -19px;
+  margin-left: 45px;
+}
+
+/* Place Style */
+
+#larkins {
+  font-size: 27pt;
+}
+
+#roe {
+  font-size: 45pt;
+  letter-spacing: 0px;
+  margin-top: -5px;
+}
+
+#add1 {
+  font-size: 62pt;
+  letter-spacing: -3px;
+  margin-top: -10px;
+}
+
+#add2 {
+  font-size: 32pt;
+  letter-spacing: -1px;
+  margin-top: -10px;
+}
+
+/* Dinner Invite Style */
+
+.dinner p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 16pt;
+}
+
+#signature {
+  font-size: 18pt;
+}
+
+/* Footer Style */
+
+#footer {
+  padding-top: 50px;
+  clear: both;
+}
+
+#footer p {
+  font-size: 14pt;
+  text-shadow: none;
+}
+
+#footer p a,
+footer p a:visited {
+  color: #74686e;
+  text-decoration: none;
+}
+
+#footer p a:hover,
+footer p a:visited:hover {
+  color: #a79c94;
+  text-decoration: underline;
+}
+
+/* iPhone Style */
+
+@media screen and (max-width: 999px) {
+
+  body,
+  #header,
+  #menu,
+  #content,
+  #footer {
+    max-width: 100%;
+  }
+
+  #names {
+    margin: 0 0 20px;
+    background: #efefef;
+    width: 100% !important;
+    -webkit-box-shadow: 0px 4px 30px #333 !important;
+  }
+
+  #content {
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .title {
+    margin: 0 0 20px;
+    transform: none;
+    writing-mode: horizontal-tb;
+    text-align: center;
+  }
+
+  .left {
+    margin-bottom: 20px;
+  }
+
+  .caption {
+    margin-top: -45px !important;
+    -webkit-text-size-adjust: 175% !important;
+    z-index: 99 !important;
+  }
+
+  .polaroid {
+    padding: 20px 20px 60px 20px !important;
+    box-shadow: 0px 4px 30px #333 !important;
+  }
+}

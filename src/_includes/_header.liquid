@@ -1,0 +1,22 @@
+<div id="header">
+  <nav name="primary">
+    <ul id="menu">
+      {% for link in collections.nav %}
+        <li>
+          <a class="{% if link.url == page.url %}active{% endif %}" href="{{ link.url }}">
+            {% if link.data.menuTitle %}
+              {{ link.data.menuTitle }}
+            {% else %}
+              {{ link.data.title }}
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div id="names" aria-label="james and audrey">
+    <div aria-hidden="true" id="amp" class="serif1">&amp;</div>
+    <div aria-hidden="true" id="james">james</div>
+    <div aria-hidden="true" id="audrey">audrey</div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>james and audrey’s wedding :: {{ title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="Author" content="James Steinbach">
+    <meta name="keywords" content="james, steinbach, james steinbach, audrey, merrick, audrey merrick, audrey jo, audreyjo, wedding, marry, married, greenville, rsvp, save the date">
+    <meta name="description" content="James Steinbach and Audrey Merrick were married on May 5, 2012."
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <link rel="stylesheet" type="text/css" media="print" onload="this.media = 'all'" href="/assets/style.css" />
+    <link rel="stylesheet" type="text/css" media="print" onload="this.media = 'all'" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Corben:400,700|Lobster+Two:400,700,400italic,700italic|Amaranth:400,700|Ultra|Yeseva+One&display=swap">
+  </head>
+
+  <body>
+    {% include _header %}
+    <div id="content">
+      <h1 class="title">{{ title }}</h1>
+
+      {{ content }}
+    </div>
+
+    {% include _footer %}
+  </body>
+</html>

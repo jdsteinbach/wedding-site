@@ -1,0 +1,28 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "Eleventy-generated site from my wedding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdsteinbach/wedding-site.git"
+  },
+  "keywords": [
+    "eleventy",
+    "wedding"
+  ],
+  "author": "James Steinbach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdsteinbach/wedding-site/issues"
+  },
+  "homepage": "https://github.com/jdsteinbach/wedding-site#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
